@@ -30,3 +30,7 @@ To implement a website that encourages people to take small steps daily and help
 - Starting page
   - intro / background / goals/ donation 
   - Sign in, Sign up (required to sign in to explore the website, will have a banner at the top saying “Sign in to Start” or other similar lines)
+
+## Personas:
+
+![persona1](../User_Personas/Jacob_Lin.png)
