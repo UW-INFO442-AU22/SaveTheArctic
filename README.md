@@ -14,11 +14,11 @@ To implement a website that encourages people to take small steps daily and help
 ## Features:
 
 ### P0
-- Education page - information about the arctic wildlifes on the front and actions users can take on the back (include the impact of that action)
+Education page - information about the arctic wildlifes on the front and actions users can take on the back (include the impact of that action)
 “Take a quiz” button at the bottom of the page that can lead to the quiz page
  - Quiz page to test users if they read the card information (different points can be accumulated depends on users correctness)
-  - Correct -> 5 points added
-  - Wrong: show the correct answer to further educate users, 2 points added
+   - Correct -> 5 points added
+   - Wrong: show the correct answer to further educate users, 2 points added
 
 ### P1
 User points & philanthropy choices page
