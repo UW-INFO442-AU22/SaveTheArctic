@@ -34,3 +34,5 @@ To implement a website that encourages people to take small steps daily and help
 ## Personas:
 
 ![persona1](https://github.com/UW-INFO442-AU22/SaveTheArctic/blob/main/User_Personas/Jacob_Lin.png)
+
+![persona2](https://github.com/UW-INFO442-AU22/SaveTheArctic/blob/main/User_Personas/Amy%20Vaugn.png)
