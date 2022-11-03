@@ -1,4 +1,5 @@
-Project Name:
+# Project: Save the Arctic
+
 Team Members: Catherine Miao, Jeffrey Qiu, Yujia Si, Whitney Zhang, Yifan Zheng
 
 ## Intro about our web app:
