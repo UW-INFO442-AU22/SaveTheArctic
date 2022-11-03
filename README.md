@@ -14,22 +14,22 @@ To implement a website that encourages people to take small steps daily and help
 ## Features:
 
 ### P0
-Education page - information about the arctic wildlifes on the front and actions users can take on the back (include the impact of that action)
+- Education page: information about the arctic wildlifes on the front and actions users can take on the back (include the impact of that action)
 “Take a quiz” button at the bottom of the page that can lead to the quiz page
- - Quiz page to test users if they read the card information (different points can be accumulated depends on users correctness)
-   - Correct -> 5 points added
-   - Wrong: show the correct answer to further educate users, 2 points added
+- Quiz page: to test users if they read the card information (different points can be accumulated depends on users correctness)
+  - Correct -> 5 points added
+  - Wrong: show the correct answer to further educate users, 2 points added
 
 ### P1
-User points & philanthropy choices page
-Show how many points users have and the total amount they have donated (once users get certain points, our website will automatically donate to a chosen organization for them. No redemption needed. Total amount of how much have been donated will be shown)
-provides users with various environmental organizations that they can donate to (not using the points)
-links to other websites/resources about global warming
+- User points & philanthropy choices page
+  - Show how many points users have and the total amount they have donated (once users get certain points, our website will automatically donate to a chosen organization for them. No redemption needed. Total amount of how much have been donated will be shown)
+  - provides users with various environmental organizations that they can donate to (not using the points)
+  - links to other websites/resources about global warming
 
 ### P2
-Starting page
-intro / background / goals/ donation 
-Sign in, Sign up (required to sign in to explore the website, will have a banner at the top saying “Sign in to Start” or other similar lines)
+- Starting page
+  - intro / background / goals/ donation 
+  - Sign in, Sign up (required to sign in to explore the website, will have a banner at the top saying “Sign in to Start” or other similar lines)
 
 ### MVP
 Among the designed features, one of the most challenging features of our app is the pop quiz for users who have read through the learning content. This is a bit challenging to develop because we have to assign a unique ID name for each user so that each user’s response will be recorded and saved in our database. On the other hand, the points system also seems challenging, as it requires users to sign up for our website and make sure that the users are logged in so that their progress is being tracked. We would also need to implement a point redemption page for redeeming the points users have earned.
