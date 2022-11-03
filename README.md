@@ -30,7 +30,3 @@ To implement a website that encourages people to take small steps daily and help
 - Starting page
   - intro / background / goals/ donation 
   - Sign in, Sign up (required to sign in to explore the website, will have a banner at the top saying “Sign in to Start” or other similar lines)
-
-### MVP
-Among the designed features, one of the most challenging features of our app is the pop quiz for users who have read through the learning content. This is a bit challenging to develop because we have to assign a unique ID name for each user so that each user’s response will be recorded and saved in our database. On the other hand, the points system also seems challenging, as it requires users to sign up for our website and make sure that the users are logged in so that their progress is being tracked. We would also need to implement a point redemption page for redeeming the points users have earned.
- 
