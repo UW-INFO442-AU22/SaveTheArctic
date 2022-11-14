@@ -1,4 +1,5 @@
 import { Routes ,Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import LandingPage from './pages/Landing';
 import EducationPage from './pages/EducationPage';
