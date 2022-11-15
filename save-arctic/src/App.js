@@ -13,9 +13,9 @@ function App() {
     <div className="App">
        <NavBar></NavBar>
       <Routes>
-        <Route path='/' element={LandingPage} />
-        <Route exact path='/education' element={EducationPage} />
-        <Route exact path='/account' element={AccountPage} />
+        <Route path='/' element={<LandingPage />} />
+        <Route exact path='/education' element={<EducationPage />} />
+        <Route exact path='/point' element={<AccountPage />} />
       </Routes>
       <Footer></Footer>
     </div>
