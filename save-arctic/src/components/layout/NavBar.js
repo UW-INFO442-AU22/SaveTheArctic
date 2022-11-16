@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import {Navbar, NavItem, NavbarBrand} from 'react-bootstrap';
+import {Navbar, NavItem} from 'react-bootstrap';
 
 
 function NavBar() {
     return (
     <Navbar bg="primary" variant="dark">
       <Container>
-        <NavbarBrand href="/" className="navbar-brand">Save The Arctic</NavbarBrand>
+        <Navbar.Brand href="/" className="navbar-brand">Save The Arctic</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

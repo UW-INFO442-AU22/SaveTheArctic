@@ -1,0 +1,19 @@
+.center {
+    margin-top: 50px;
+}
+
+.barContainer {
+    width: 400px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.progress {
+    height: 30px !important;
+}
+
+#pointNotification {
+    font-size: large;
+    margin-top: 10px;
+}
