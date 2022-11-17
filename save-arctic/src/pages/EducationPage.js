@@ -3,12 +3,21 @@ import BootstrapButton from "../components/layout/BootstrapButton";
 import Stack from 'react-bootstrap/Stack';
 import Background from "../img/quizCover.jpg";
 
+import jsonData from '../data/animals.json';
+const loadData = () => JSON.parse(JSON.stringify(jsonData));
+
 
 function EducationPage() {
     return <div className="eduPage">
         <Stack gap={3}>
-            <div className="bg-light border">Arctic Animal of the Day</div>
-            <div className="bg-light border">Actions - What can we do as individuals?
+            <div className="bg-light border">
+               <h3>Arctic Animal of the Day</h3> 
+               <section>
+
+               </section>
+            </div>
+            <div className="bg-light border">
+                <h4>Actions - What can we do as individuals?</h4>
                     <p>
                     There are many ways in our daily life that we can take practical actions on cutting our carbon footprint. 
                     Put on an extra layer and turn down the heating a degree or two. Turn off lights and appliances when you 
@@ -17,7 +26,8 @@ function EducationPage() {
                     Take public transportation or car pooling with others to recude the frequency of using private vehicles. 
                     </p>
                 </div>
-            <div className="bg-light border">Impacts
+            <div className="bg-light border">
+                <h4>Impacts</h4>
                 <p>To keep the temperature increase somewhat close to 2°C above pre-industrial times, the average footprint of everyone 
                     in the world needs to be approaching to 0 to 2 tonnes by 2050. Your contribution may be a small piece of the pie overall, 
                     but you alone can prevent many tonnes of GHGs from entering the atmosphere just by changing a few habits. 
