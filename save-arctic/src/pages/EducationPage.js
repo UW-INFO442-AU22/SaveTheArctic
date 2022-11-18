@@ -3,8 +3,7 @@ import BootstrapButton from "../components/layout/BootstrapButton";
 import Stack from 'react-bootstrap/Stack';
 import Background from "../img/quizCover.jpg";
 
-import jsonData from '../data/animals.json';
-const loadData = () => JSON.parse(JSON.stringify(jsonData));
+import AnimalInfo from '../components/AnimalInfo';
 
 
 function EducationPage() {
@@ -13,7 +12,7 @@ function EducationPage() {
             <div className="bg-light border">
                <h3>Arctic Animal of the Day</h3> 
                <section>
-
+                <AnimalInfo />
                </section>
             </div>
             <div className="bg-light border">

@@ -1,11 +1,11 @@
 
-    [
-      {
+        {
             "id":"1",
             "name":"Arctic Fox",
             "scientificName": "Vulpes lagopus",
             "population":"Several hundred thousand",
             "fact": "The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers."
+
         },
 
         {
@@ -65,4 +65,3 @@
             "fact": "Today the biggest threat facing walruses is the loss of stable sea ice due to climate change. Walruses feed on the ocean floor in the relatively shallow waters of the continental shelf, where the sea ice itself sustains a rich food web. Females will leave their young on the sea ice while they forage, then haul out to nurse their calves. The accelerating retreat of sea ice puts the newborns’ safe haven farther away from the mothers’ food—meaning longer, more exhausting swims for the mothers, and more time alone for the calves. Walrus are also seeking haul-outs on beaches, instead of ice, which puts them in closer proximity to sources of human disturbance. Walrus' are known to stampede when disturbed. These stampedes can result in mortality. "
         }
     
-    ]
