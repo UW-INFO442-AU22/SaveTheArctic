@@ -1,4 +1,4 @@
-import { Routes ,Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { React, useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/App.css';
@@ -38,24 +38,24 @@ function App() {
     return (
       <div className="App">
         <NavBar></NavBar>
-          <Routes>
-            <Route path='/' element={<LandingPage />} />
-            <Route exact path='/education' element={<EducationPage />} />
-            <Route exact path='/point' element={<AccountPage />} />
-          </Routes>
-          <Footer></Footer>
+        <Routes>
+          <Route path='/' element={<LandingPage />} />
+          <Route exact path='/education' element={<EducationPage />} />
+          <Route exact path='/point' element={<AccountPage />} />
+        </Routes>
+        <Footer></Footer>
       </div>
     );
   } else {
     return (
       <div className="App">
         <NavBar></NavBar>
-          <Routes>
-            <Route path='/' element={<LandingPage />} />
-            <Route exact path='/education' element={<LandingPage />} />
-            <Route exact path='/point' element={<LandingPage />} />
-          </Routes>
-          <Footer></Footer>
+        <Routes>
+          <Route path='/' element={<LandingPage />} />
+          <Route exact path='/education' element={<LandingPage />} />
+          <Route exact path='/point' element={<AccountPage />} />
+        </Routes>
+        <Footer></Footer>
       </div>
     )
   }
