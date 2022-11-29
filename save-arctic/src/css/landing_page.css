@@ -34,18 +34,15 @@
     /* padding: 24px 32px 20% 32px; */
     padding-bottom: 50px;
   }
-  .advise-1-text > h2 {
-    margin-bottom: 32px;
-  }
   .second-advise {
     padding-top: 96px;
-    padding-left: 48px;
+    padding-right: 120px;
     display: flex;
     background-color: rgb(201, 249, 248);
   }
   .third-advise {
     padding-top: 96px;
-    padding-left: 48px;
+    padding-left: 120px;
     display: flex;
     background-color: rgb(176, 226, 238);
   }
@@ -56,8 +53,9 @@
     margin: 0 auto;
   }
   .texts {
-    width: 400px;
-    margin: 80px 0 44px 0;
+    margin-top: 40px;
+    width: 600px;
+    margin: 28px 0 70px 0;
   }
   .lil {
     margin-left: 24px;
@@ -66,4 +64,7 @@
     margin-left: 64px;
     width: 100%;
   }
-  
+  .top-svg2 {
+    margin-right: 64px;
+    width: 100%;
+  }

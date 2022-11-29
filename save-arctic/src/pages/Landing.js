@@ -48,6 +48,13 @@ function LandingPage(props) {
 
       <section className="advise--section">
         <div className="second-advise">
+          <div className="top-svg">
+            <img
+              className="svg1"
+              src={require("../images/littleseal.jpg")}
+              alt="polar bear on ice"
+            />
+          </div>
           <div>
             <div>
               <div>
@@ -67,13 +74,6 @@ function LandingPage(props) {
               conservation and take sustainable actions to improve the living
               condition of Arctic wildlife.
             </p>
-          </div>
-          <div className="top-svg">
-            <img
-              className="svg1"
-              src={require("../images/littleseal.jpg")}
-              alt="polar bear on ice"
-            />
           </div>
         </div>
 
@@ -101,16 +101,27 @@ function LandingPage(props) {
               accumulating in a small population through genetic drift.
             </p>
           </div>
-          <div className="top-svg">
-            <img
-              className="svg1"
-              src={require("../images/polarbearice.jpg")}
-              alt="polar bear on ice"
-            />
+          <div className="top-svg2">
+            <iframe
+              width="524.8"
+              height="245.12"
+              src="https://www.youtube.com/embed/xQ4oodFQpsY"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
 
         <div className="second-advise">
+          <div className="top-svg">
+            <img
+              className="svg1"
+              src={require("../images/adoptionwebsite.jpg")}
+              alt="polar bear on ice"
+            />
+          </div>
           <div>
             <div>
               <div>
@@ -129,13 +140,6 @@ function LandingPage(props) {
               organization for them. No redemption needed. Total amount of how
               much have been donated will be shown).
             </p>
-          </div>
-          <div className="top-svg">
-            <img
-              className="svg1"
-              src={require("../images/adoptionwebsite.jpg")}
-              alt="polar bear on ice"
-            />
           </div>
         </div>
       </section>
