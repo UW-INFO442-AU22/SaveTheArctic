@@ -11,7 +11,6 @@ function AnimalInfo() {
 
   return (
   <div className="infoSection">
-      <img className="animal-photo" src= {`../img/${animal[random].image}`} alt="Animal photo"/>
       <h4>{animal[random].name}</h4>
       <br></br>
       <p><strong> Scientific Name:</strong> {animal[random].scientificName}</p>
