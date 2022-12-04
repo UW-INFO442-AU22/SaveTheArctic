@@ -1,0 +1,68 @@
+.eduPage {
+    background-color: #F2FDFF;
+}
+h3 {
+    text-align: center;
+}
+.info {
+    text-align: justify;
+    padding: 50px 50px;
+}
+
+.action {
+    text-align: justify;
+    padding: 50px 50px;
+    background-color: white;
+}
+
+.impact {
+    width: 60%;
+    height: 40%;
+    border: solid 1px #555;
+    background-color: #F1D047;
+    box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+    -o-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+    border-radius:25px;
+    text-align: justify;
+    padding: 50px 35px;
+    margin: auto;
+}
+
+.intro {
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 8em;
+}
+
+
+
+
+@media (min-width: 598px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+
+    main {
+        text-shadow: 1px 1px #153c43;
+    }
+
+}
+
+@media (min-width: 768px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    main {
+        text-shadow: 1px 1px #153c43;
+    }
+}
+
