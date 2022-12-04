@@ -7,16 +7,17 @@ import Footer from '../layout/Footer.js';
 import NavBar from '../layout/NavBar';
 
 function QuizPage() {
+    const container = document.getElementById('root');
+    const root = ReactDOM.createRoot(container);
     return (
-    ReactDOM.render(
+    root.render(
         <React.StrictMode>
-            {/* <NavBar /> */}
-            {/* <Footer /> */}
+            {/* <NavBar></NavBar>
+            <Footer></Footer> */}
             <QuizProvider>
             <Quiz />
             </QuizProvider>
-        </React.StrictMode>,
-        document.getElementById("root")
+        </React.StrictMode>
     )
     );
 }
