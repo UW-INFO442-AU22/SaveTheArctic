@@ -1,18 +1,21 @@
-import { useState } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import { getAuth } from "firebase/auth";
+import { getDatabase, ref, onValue} from "firebase/database";
 
 function Bar() {
-  const [myPoint, setMyPoint] = useState([]);
-  let user = getAuth().currentUser;
-
-  const now = 60;
+  let point = 0;
+  const db = getDatabase();
+  let userId = getAuth().currentUser.uid;
+  const userInfo = ref(db, "users/" + userId);
+  onValue(userInfo, (snapshot) => {
+    point = snapshot.val().points;
+  })
+  const progress = 100 - point;
 
   return (
     <div class='container'>
-      <ProgressBar now={now} label={`${now}%`} />
-      <p id="pointNotification">points to your next free donation!</p>
-      <p>{user.email}</p>
+      <ProgressBar now={point} label={`${point}%`} />
+      <p id="pointNotification">{progress} points to your next free donation!</p>
     </div>
   );
 }

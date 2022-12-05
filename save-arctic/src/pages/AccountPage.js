@@ -2,23 +2,41 @@ import Bar from '../components/progressbar';
 import '../css/AccountPage.css';
 import {
     Card,
-    Button,
     Container,
 } from 'react-bootstrap';
+import Graph from "../images/bear.png";
+import { getAuth } from "firebase/auth";
+import { getDatabase, ref, onValue} from "firebase/database";
 
 
 function AccountPage() {
+    let point = 0;
+    const db = getDatabase();
+    let userId = getAuth().currentUser.uid;
+    const userInfo = ref(db, "users/" + userId);
+    onValue(userInfo, (snapshot) => {
+        point = snapshot.val().points;
+    })
+    let donation = 0;
+    if (point >= 100) {
+        donation = point / 10;
+        donation = Math.floor(donation);
+    }
     return (
-        <div>
+        <div className='accountPage'>
             <h2 className="center">Points</h2>
             <div className='barContainer'>
                 <Bar />
             </div>
 
+            <div className="totalDonation">
+                <span className='bear'><img src={ Graph } width="300" height="300" alt="Cartoon of a polar bear"/>Total Donation: ${donation}</span>
+            </div>
+
             <div className="donationOrg">
                 <div className="pt-5">
-                    <h2 >Environmental Organizations</h2>
-                    <p >click on the pictures to donate</p>
+                    <h2>Environmental Organizations</h2>
+                    <p>click on the pictures to donate</p>
                 </div>
                 <div class="pb-5">
                     <div class="d-grid gap-3">
