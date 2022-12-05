@@ -10,6 +10,9 @@ function Bar() {
   onValue(userInfo, (snapshot) => {
     point = snapshot.val().points;
   })
+  if (point >= 100) {
+    point = point % 100;
+  }
   const progress = 100 - point;
 
   return (

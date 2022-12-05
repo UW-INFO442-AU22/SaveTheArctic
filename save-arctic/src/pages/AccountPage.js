@@ -21,6 +21,7 @@ function AccountPage() {
     if (point >= 100) {
         donation = point / 10;
         donation = Math.floor(donation);
+        donation = donation - donation % 10;
     }
     return (
         <div className='accountPage'>
