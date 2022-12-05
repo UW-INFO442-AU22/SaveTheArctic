@@ -39,8 +39,8 @@ function AccountPage() {
                     <h2>Environmental Organizations</h2>
                     <p>click on the pictures to donate</p>
                 </div>
-                <div class="pb-5">
-                    <div class="d-grid gap-3">
+                <div className="pb-5">
+                    <div className="d-grid gap-3">
                         <div className='d-flex justify-content-evenly p-5'>
                             <Card style={{ width: '20rem' }}>
                                 <a className='p-5' href='https://www.nature.org/en-us/'><Card.Img variant="top" src='https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2246/logo-tnc.svg?v=1612203209000' />
