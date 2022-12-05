@@ -33,16 +33,13 @@ function App() {
       unregisterAuthListener();
     };
   }, []);
-  //user stays logedin, but need to change the UI
-  console.log(currentUser);
-  const db = getDatabase();
 
   if (currentUser) {
     return (
       <div className="App">
         <NavBar></NavBar>
           <Routes>
-            <Route path='/' element={<LandingPage />} />
+            <Route path='/' element={<LandingPage isLoggedIn={true} />} /> 
             <Route exact path='/education' element={<EducationPage />} />
             <Route exact path='/point' element={<AccountPage />} />
             <Route exact path='/quiz' element={<QuizPage currentUser={currentUser}/>} />
@@ -54,12 +51,12 @@ function App() {
     return (
       <div className="App">
         <NavBar></NavBar>
-        <Routes>
-          <Route path='/' element={<LandingPage />} />
-          <Route exact path='/education' element={<LandingPage />} />
-          <Route exact path='/point' element={<AccountPage />} />
-        </Routes>
-        <Footer></Footer>
+          <Routes>
+            <Route path='/' element={<LandingPage isLoggedIn={false}/>} />
+            <Route exact path='/education' element={<LandingPage />} />
+            <Route exact path='/point' element={<LandingPage />} />
+          </Routes>
+          <Footer></Footer>
       </div>
     )
   }
