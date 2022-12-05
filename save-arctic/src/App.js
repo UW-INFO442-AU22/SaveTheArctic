@@ -2,14 +2,14 @@ import { Routes, Route } from 'react-router-dom';
 import { React, useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/App.css';
-
 import LandingPage from './pages/Landing';
 import EducationPage from './pages/EducationPage';
 import AccountPage from './pages/AccountPage';
 import Footer from './components/layout/Footer.js';
 import NavBar from './components/layout/NavBar';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import QuizPage from "./components/Quiz/index.js";
+import { getDatabase, ref, onValue } from "firebase/database";
+import QuizPage from "./components/Quiz/Quiz.js";
 
 
 function App() {
@@ -35,6 +35,7 @@ function App() {
   }, []);
   //user stays logedin, but need to change the UI
   console.log(currentUser);
+  const db = getDatabase();
 
   if (currentUser) {
     return (
@@ -44,7 +45,7 @@ function App() {
             <Route path='/' element={<LandingPage />} />
             <Route exact path='/education' element={<EducationPage />} />
             <Route exact path='/point' element={<AccountPage />} />
-            <Route exact path='/quiz' element={<QuizPage />} />
+            <Route exact path='/quiz' element={<QuizPage currentUser={currentUser}/>} />
           </Routes>
           <Footer></Footer>
       </div>
