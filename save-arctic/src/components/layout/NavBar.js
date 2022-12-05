@@ -16,6 +16,9 @@ function NavBar() {
               <Link to="/education" className="nav-link">Education</Link>
             </NavItem>
             <NavItem>
+              <Link to="/quiz" className="nav-link">Quiz</Link>
+            </NavItem>
+            <NavItem>
               <Link to="/point" className="nav-link">My Points</Link>
             </NavItem>
           </Nav>
