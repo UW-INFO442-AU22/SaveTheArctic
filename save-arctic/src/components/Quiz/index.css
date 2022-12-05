@@ -4,6 +4,8 @@
 
 body {
   background-color: #e4e4e4;
+  position: relative;
+  min-height: 90%;
 }
 
 div {
@@ -13,14 +15,15 @@ div {
 .quiz {
   width: 975px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 5%;
+  margin-bottom: 18%;
 }
 
 .question {
   background-color: #39CAF8;
   color: white;
   padding: 10px;
-  min-height: 60px;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,6 +115,19 @@ div {
   text-align: center;
 }
 
+.progress-button {
+  margin: 0 auto;
+  color: #fff;
+  background: #39CAF8;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+}
+
 .score {
   color: 000;
   font-size: 18px;
@@ -140,4 +156,11 @@ div {
 
 .disabled-answer {
   pointer-events: none;
+}
+
+.footer p{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }

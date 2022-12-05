@@ -28,12 +28,13 @@ function Quiz() {
           >
             Restart
           </div>
+          {/* <div href="#point" className="progress-button"> View Progress </div> */}
         </div>
       )}
       {!quizState.showResults && (
         <div>
           <div className="quizTitle">
-            Quiz Time!
+            Daily Quiz!
           </div>
           {/* <div className="score">
             Question {quizState.currentQuestionIndex + 1}/
