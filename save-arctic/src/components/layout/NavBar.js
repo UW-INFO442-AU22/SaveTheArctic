@@ -3,12 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import {Navbar, NavItem} from 'react-bootstrap';
 
+const navbar_color = {backgroundColor: '#ABEBFF'};
 
 function NavBar() {
     return (
-    <Navbar bg="primary" variant="dark">
+    <Navbar style={navbar_color}  variant="dark">
       <Container>
-        <Navbar.Brand href="/" className="navbar-brand">Save The Arctic</Navbar.Brand>
+        <Navbar.Brand href="/" className="navbar-brand mb-1 h1 fs-4">Save The Arctic</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
