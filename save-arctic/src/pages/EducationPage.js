@@ -4,8 +4,9 @@ import Stack from 'react-bootstrap/Stack';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Background from "../images/quizCover.jpeg";
+import Background from "../images/arctic-fox.jpeg";
 import Graph from "../images/green.png";
+import {Link} from 'react-router-dom';
 
 
 import AnimalInfo from '../components/AnimalInfo';
@@ -51,16 +52,20 @@ function EducationPage() {
         <br></br>
         <div className='quizSection' role="img" aria-label="Background image to start quiz section" style={{ 
                 width: '100vw',
-                height: '100vh',
+                height: '80vh',
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat', 
                 backgroundImage: `url(${Background})`}}>
-            <h1 className="intro">Ready to save more Arctic wildlifes Forever?</h1>
+            <h1 className="intro" style={{ 
+                fontWeight: 'bold'}}>Ready to save more Arctic wildlifes Forever?</h1>
             <br></br>
-            <a href='/quiz'>
-                <BootstrapButton className="btn"></BootstrapButton>
-            </a>
+            <Link to='/quiz'>
+                <button className="quiz-button"> TAKE THE QUIZ </button>
+            </Link>
+            {/* <a href='/quiz'>
+            <BootstrapButton/>
+            </a> */}
         </div>
     </div>;
 }

@@ -20,6 +20,18 @@ function LoadingButton() {
 
   return (
     <Button
+      className='btn btn-info'
+      href='/quiz' 
+      style={{
+        backgroundColor: '#ABEBFF',
+        color: 'white',
+        fontSize: '18px',
+        fontWeight: '600',
+        padding: '10px 60px',
+        borderRadius: '5px',
+        margin: '10px 0px',
+        cursor: 'pointer'
+      }} 
       variant="primary"
       disabled={isLoading}
       onClick={!isLoading ? handleClick : null}

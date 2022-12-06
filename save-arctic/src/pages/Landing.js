@@ -107,7 +107,7 @@ function LandingPage(props) {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/xQ4oodFQpsY"
+              src="https://www.youtube.com/embed/ZGG9n7lJEYg"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -120,7 +120,7 @@ function LandingPage(props) {
           <div className="top-svg">
             <img
               className="svg1"
-              src={require("../images/adoptionwebsite.jpg")}
+              src={require("../images/donation.jpeg")}
               alt="point and donation system introduction"
             />
           </div>

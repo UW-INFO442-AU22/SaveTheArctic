@@ -80,13 +80,14 @@
     margin: 28px 0 70px 0;
     color: white;
     font-weight: 700;
-    text-shadow: 0 0 3px rgb(230, 227, 227);
+    text-shadow: 0 0 3px rgb(166, 159, 159);
+    line-height: 35px;
   }
   .lil {
     margin-left: 24px;
     color: white;
     font-weight: 800;
-    text-shadow: 0 0 3px rgb(211, 209, 209);
+    text-shadow: 0 0 3px rgb(166, 159, 159);
   }
   .top-svg {
     margin-left: 64px;
@@ -95,8 +96,9 @@
   .top-svg2 {
     margin-right: 120px;
     margin-left: 40px;
-    width: 740px;
-    height: 270px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
   }
 
 /* for phones  */ 
