@@ -47,7 +47,7 @@ function EducationPage() {
                     over the course of your life. Our impact over a lifetime really adds up. If people start to make gradual changes on 
                     reducing individual carbon emission, we can make a  huge difference on cutting the total amount of emission each year. 
                     This profound impact can effectively improve the global warming issue and protect the habitat of Arctic wildlife. </p>
-                </div>
+            </div>
         </Stack>
         <br></br>
         <div className='quizSection' role="img" aria-label="Background image to start quiz section" style={{ 
