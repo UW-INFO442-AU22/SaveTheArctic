@@ -1,6 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import animalJson from "../data/animals.json";
+import '../css/EducationPage.css';
 
 
 function AnimalInfo() {
@@ -12,13 +12,16 @@ function AnimalInfo() {
 
   return (
   <div className="infoSection">
-      <h4>{animal[random].name}</h4>
-      <br></br>
-      <p><strong> Scientific Name:</strong> {animal[random].scientificName}</p>
-      <br></br>
-      <p><strong> Population:</strong> {animal[random].population}</p>
-      <br></br>
-      <p> {animal[random].fact}</p>
+    <img id="animal" src={require(`../images/${animal[random].photo}`)} alt= {"A photo of " + animal[random].name} width="600" height="450" />
+     <div className="content">
+        <h4>{animal[random].name}</h4>
+        <br></br>
+        <p><strong> Scientific Name:</strong> {animal[random].scientificName}</p>
+        <br></br>
+        <p><strong> Population:</strong> {animal[random].population}</p>
+        <br></br>
+        <p> {animal[random].fact}</p>
+      </div>
   </div>
   );
 };

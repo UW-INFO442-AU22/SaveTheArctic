@@ -23,7 +23,7 @@ function EducationPage() {
             <div className="action">
                 <Container>
                     <Row>
-                    <Col><img src={ Graph } width="400" height="400" aria-label="Environmental protection illustration"></img></Col>
+                    <Col><img id="green" src={ Graph } width="400" height="400" aria-label="Environmental protection illustration"></img></Col>
                     <Col> <h4>Actions - What can we do as individuals?</h4>
                     <br></br>
                         <p>
