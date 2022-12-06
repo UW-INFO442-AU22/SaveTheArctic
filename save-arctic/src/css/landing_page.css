@@ -60,7 +60,7 @@
     padding-top: 96px;
     padding-right: 120px;
     display: flex;
-    background-color: rgb(201, 249, 248);
+    background-color: #88d6fd;
   }
   .third-advise {
     padding-top: 96px;
@@ -131,6 +131,7 @@ and (-webkit-device-pixel-ratio: 3) {
     padding-left: 60px;
     background-color: rgb(176, 226, 238);
   }
+
   .lil {
     margin-top: 20px;
     text-align: center;
