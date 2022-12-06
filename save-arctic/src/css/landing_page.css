@@ -78,9 +78,15 @@
     margin-top: 40px;
     width: 600px;
     margin: 28px 0 70px 0;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 3px rgb(230, 227, 227);
   }
   .lil {
     margin-left: 24px;
+    color: white;
+    font-weight: 800;
+    text-shadow: 0 0 3px rgb(211, 209, 209);
   }
   .top-svg {
     margin-left: 64px;
