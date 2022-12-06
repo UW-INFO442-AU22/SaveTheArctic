@@ -69,7 +69,7 @@ function LandingPage(props) {
               application for helping wildlife of the Arctic that are impacted
               by global warming. By educating users about wildlife, providing
               the environmental impact of a small action, and prompting users to
-              take quizzes after reading the information, Save the Arctic
+              take quizzes after reading the information. Save the Arctic
               encourages its users to learn challenging issues of wildlife
               conservation and take sustainable actions to improve the living
               condition of Arctic wildlife.
@@ -103,8 +103,8 @@ function LandingPage(props) {
           </div>
           <div className="top-svg2">
             <iframe
-              width="524.8"
-              height="245.12"
+              width="100%"
+              height="100%"
               src="https://www.youtube.com/embed/xQ4oodFQpsY"
               title="YouTube video player"
               frameBorder="0"
@@ -119,7 +119,7 @@ function LandingPage(props) {
             <img
               className="svg1"
               src={require("../images/adoptionwebsite.jpg")}
-              alt="polar bear on ice"
+              alt="point and donation system introduction"
             />
           </div>
           <div>
@@ -135,9 +135,9 @@ function LandingPage(props) {
               You can do quizes that test your understanding of the card
               information, and earn different amount of points depending on the
               correctness. You can check how many points you have earned and the
-              total amount of money that you have donated (once users get
+              total amount of money that you have donated (once you get
               certain points, our website will automatically donate to a chosen
-              organization for them. No redemption needed. Total amount of how
+              organization for you, and the total amount of how
               much have been donated will be shown).
             </p>
           </div>

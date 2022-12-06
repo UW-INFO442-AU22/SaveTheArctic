@@ -65,6 +65,74 @@
     width: 100%;
   }
   .top-svg2 {
-    margin-right: 64px;
-    width: 100%;
+    margin-right: 120px;
+    margin-left: 40px;
+    width: 740px;
+    height: 270px;
   }
+
+/* for iPhone 12 Pro  */ 
+@media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) {
+  .banner-container > img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: 290px;
+  }
+
+  .banner-container #callout {
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 100%;
+    text-align: center;
+  }
+  .second-advise {
+    padding-top: 86px;
+    padding-bottom: 86px;
+    display: block;
+    text-align: center;
+    padding-left: 70px;
+    background-color: rgb(201, 249, 248);
+  }
+  .third-advise {
+    padding-bottom: 96px;
+    display: block;
+    text-align: center;
+    padding-right: 200px;
+    padding-left: 60px;
+    background-color: rgb(176, 226, 238);
+  }
+  .lil {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 100px;
+  }
+  .top-svg {
+    display: block;
+    margin:auto;
+    width: 280px;
+
+  }
+  .svg1 {
+    display: block;
+    margin-right: 50px;
+    width: 250px;
+  }
+  .top-svg2 {
+    margin-left: 20px;
+    width: 250px;
+    height: 123.81px;
+  }
+  .texts {
+    margin-top: 40px;
+    width: 270px;
+    margin: 28px 0 70px 0;
+  }
+}
