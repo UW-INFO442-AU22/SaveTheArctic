@@ -35,7 +35,7 @@ function LandingPage(props) {
             <h2> Get Started! </h2>
             {isLoggedIn ? (
               <div className="app__headerLoggedIn">
-                <button onClick={() => auth.signOut()}>Log Out</button>
+                <button className="firebase-logout" onClick={() => auth.signOut()}>Log Out</button>
               </div>
             ) : (
               <StyledFirebaseAuth

@@ -30,6 +30,18 @@
     font-size: 30px;
     margin-bottom: 50px;
   }
+
+  .banner-container #callout .firebase-logout{
+    background-color: #ABEBFF;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 60px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border: white;
+  }
   
   .app__headerLoggedIn {
     position: relative;
