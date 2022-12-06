@@ -14,7 +14,7 @@ function AnimalInfo() {
   <div className="infoSection">
     <img id="animal" src={require(`../images/${animal[random].photo}`)} alt= {"A photo of " + animal[random].name} />
      <div className="content">
-        <h4>{animal[random].name}</h4>
+        <h4 className="animalHeader">{animal[random].name}</h4>
         <br></br>
         <p><strong> Scientific Name:</strong> {animal[random].scientificName}</p>
         <br></br>

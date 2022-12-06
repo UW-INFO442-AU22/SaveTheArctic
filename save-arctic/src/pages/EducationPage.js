@@ -24,14 +24,16 @@ function EducationPage() {
                 <Container>
                     <Row>
                     <Col><img id="green" src={ Graph } width="400" height="400" aria-label="Environmental protection illustration"></img></Col>
-                    <Col> <h4>Actions - What can we do as individuals?</h4>
+                    <Col>
+                    <h4>Actions - What can we do as individuals?</h4>
                     <br></br>
                         <p>
                         There are many ways in our daily life that we can take practical actions on cutting our carbon footprint. Putting on an extra layer and turning down the heating a degree or two can effectively reduce the amount of greenhouse gas emissions. 
                         Turn off lights and appliances when you don't need them to save power. Also, replace light bulbs with LEDs or other low-energy lights. 
                         Choose public transportation or carpool with others to reduce the frequency of using private vehicles. Though these small changes seem to be trivial, however, 
                         if every individual begins to change a little bit, we will eventually make a profound impact on our environment. By learning the facts about these amazing animals and taking daily quizzes, we will help you donate money to Arctic Animal Protection organizations. 
-                        </p></Col>
+                        </p>
+                    </Col>
                     </Row>
                 </Container>
             </div>

@@ -81,5 +81,12 @@ and (max-device-height: 950px) {
         display: block;
     }
 
-}
+    .animalHeader {
+        margin-top: 25px;
+    }
 
+    .content {
+        text-align: left;
+        width: fit-content;
+    }
+}
