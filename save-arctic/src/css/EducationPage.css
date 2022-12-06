@@ -53,9 +53,8 @@ h3 {
  
 /* 2532x1170 pixels at 460ppi */ 
 @media only screen 
-and (device-width: 390px) 
-and (device-height: 844px) 
-and (-webkit-device-pixel-ratio: 3) {
+and (max-device-width: 420px) 
+and (max-device-height: 950px) {
     h3,h4 p {
         text-align: center;
     }
