@@ -24,13 +24,15 @@ function LandingPage(props) {
     <React.Fragment>
       <div className="banner-container">
         <img
-          src={require("../images/banner.jpg")}
+          src={require("../images/polar-bear2.jpeg")}
           alt="a variety of arctic animals"
         />
         <div id="callout">
-          <h1>Save the arctic wildlife, take actions today!</h1>
+          <div className="banner-slogan">
+            <p>Take Actions Today to Save the Arctic Wildlife</p>
+          </div>
           <div>
-            <p> Get Started </p>
+            <h2> Get Started! </h2>
             {isLoggedIn ? (
               <div className="app__headerLoggedIn">
                 <button onClick={() => auth.signOut()}>Log Out</button>
