@@ -37,6 +37,25 @@
 }
 
 /* for phones */
+@media only screen 
+and (max-device-width: 420px) 
+and (max-device-height: 950px)  {
+    .barContainer {
+        width: 200px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .bear {
+        font-size: 20px;
+    }
+
+    .bear img {
+        width: 100px;
+        height: 100px;
+    }
+}
 
 /* Font */
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');

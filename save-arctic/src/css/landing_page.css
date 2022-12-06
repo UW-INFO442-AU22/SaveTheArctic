@@ -99,11 +99,10 @@
     height: 270px;
   }
 
-/* for iPhone 12 Pro  */ 
+/* for phones  */ 
 @media only screen 
-and (device-width: 390px) 
-and (device-height: 844px) 
-and (-webkit-device-pixel-ratio: 3) {
+and (max-device-width: 420px) 
+and (max-device-height: 950px) {
   .banner-container > img {
     display: block;
     width: auto;
