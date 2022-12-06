@@ -8,15 +8,16 @@ import Graph from "../images/bear.png";
 import { getAuth } from "firebase/auth";
 import { getDatabase, ref, onValue} from "firebase/database";
 
-
-function AccountPage() {
-    let point = 0;
-    const db = getDatabase();
-    let userId = getAuth().currentUser.uid;
-    const userInfo = ref(db, "users/" + userId);
-    onValue(userInfo, (snapshot) => {
-        point = snapshot.val().points;
-    })
+function AccountPage(props) {
+    let point = Object.values(props);
+    if (point == 0) {
+        const db = getDatabase();
+        let userId = getAuth().currentUser.uid;
+        const userInfo = ref(db, "users/" + userId);
+        onValue(userInfo, (snapshot) => {
+            point = snapshot.val().points;
+        })
+    }
     let donation = 0;
     if (point >= 100) {
         donation = point / 10;

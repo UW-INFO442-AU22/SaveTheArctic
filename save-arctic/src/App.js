@@ -35,13 +35,21 @@ function App() {
   }, []);
 
   if (currentUser) {
+    let point = 0;
+    const db = getDatabase();
+    let userId = getAuth().currentUser.uid;
+    const userInfo = ref(db, "users/" + userId);
+    onValue(userInfo, (snapshot) => {
+        point = snapshot.val().points;
+    })
+
     return (
       <div className="App">
         <NavBar></NavBar>
           <Routes>
             <Route path='/' element={<LandingPage isLoggedIn={true} />} /> 
             <Route exact path='/education' element={<EducationPage />} />
-            <Route exact path='/point' element={<AccountPage />} />
+            <Route exact path='/point' element={<AccountPage point={point}/>} />
             <Route exact path='/quiz' element={<QuizPage currentUser={currentUser}/>} />
           </Routes>
           <Footer></Footer>
