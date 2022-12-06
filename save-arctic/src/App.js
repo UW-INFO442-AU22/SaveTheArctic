@@ -55,6 +55,7 @@ function App() {
             <Route path='/' element={<LandingPage isLoggedIn={false}/>} />
             <Route exact path='/education' element={<LandingPage />} />
             <Route exact path='/point' element={<LandingPage />} />
+            <Route exact path='/quiz' element={<LandingPage />} />
           </Routes>
           <Footer></Footer>
       </div>
