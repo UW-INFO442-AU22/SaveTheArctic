@@ -12,7 +12,7 @@ function AnimalInfo() {
 
   return (
   <div className="infoSection">
-    <img id="animal" src={require(`../images/${animal[random].photo}`)} alt= {"A photo of " + animal[random].name} width="600" height="450" />
+    <img id="animal" src={require(`../images/${animal[random].photo}`)} alt= {"A photo of " + animal[random].name} />
      <div className="content">
         <h4>{animal[random].name}</h4>
         <br></br>
