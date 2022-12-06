@@ -1,9 +1,5 @@
 import Bar from '../components/progressbar';
 import '../css/AccountPage.css';
-import {
-    Card,
-    Container,
-} from 'react-bootstrap';
 import Graph from "../images/bear.png";
 import { getAuth } from "firebase/auth";
 import { getDatabase, ref, onValue } from "firebase/database";
