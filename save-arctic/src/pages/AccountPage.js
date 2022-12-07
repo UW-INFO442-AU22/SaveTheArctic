@@ -27,7 +27,7 @@ function AccountPage(props) {
                 <Bar />
             </div>
 
-            <div>
+            <div className="totalDonation">
                 <span className='bear'><img src={Graph} alt="Cartoon of a polar bear" />Total Donation: ${donation}</span>
             </div>
 
