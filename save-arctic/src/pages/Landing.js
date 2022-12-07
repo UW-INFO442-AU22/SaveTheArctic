@@ -117,10 +117,10 @@ function LandingPage(props) {
           </div>
         </div>
 
-        <div className="second-advise">
+        <div className="second-advise section3">
           <div className="top-svg">
             <img
-              className="svg1"
+              className="svg1 image3"
               src={require("../images/donation.jpeg")}
               alt="point and donation system introduction"
             />

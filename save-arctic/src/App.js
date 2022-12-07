@@ -7,9 +7,39 @@ import EducationPage from './pages/EducationPage';
 import AccountPage from './pages/AccountPage';
 import Footer from './components/layout/Footer.js';
 import NavBar from './components/layout/NavBar';
+//import Popup from './components/layout/Popup';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getDatabase, ref, onValue } from "firebase/database";
 import QuizPage from "./components/Quiz/Quiz.js";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
+function PopUp() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="secondary" onClick={handleShow}>
+        Please log in to explore more!
+      </Button>
+
+      <Modal show={show} onHide={handleClose} animation={false}>
+        <Modal.Header closeButton>
+          <Modal.Title>User Not Logged In</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Please log in to explore more!</Modal.Body>
+        {/* <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer> */}
+      </Modal>
+    </>
+  );
+}
 
 
 function App() {
@@ -69,9 +99,9 @@ function App() {
         <NavBar></NavBar>
           <Routes>
             <Route path='/' element={<LandingPage isLoggedIn={false}/>} />
-            <Route exact path='/education' element={<LandingPage />} />
-            <Route exact path='/point' element={<LandingPage />} />
-            <Route exact path='/quiz' element={<LandingPage />} />
+            <Route exact path='/education' element={<><PopUp/><LandingPage /></>} />
+            <Route exact path='/point' element={<><PopUp/><LandingPage /></>} />
+            <Route exact path='/quiz' element={<><PopUp/><LandingPage /></>} />
           </Routes>
           <Footer></Footer>
       </div>

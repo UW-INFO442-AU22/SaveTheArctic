@@ -103,6 +103,16 @@
     margin-bottom: 5%;
   }
 
+  .section3 {
+    height: 60%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+  }
+  .image3 {
+    height: 60%;
+    width: auto;
+  }
+
 /* for phones  */ 
 @media only screen 
 and (max-device-width: 420px) 
@@ -167,4 +177,5 @@ and (max-device-height: 950px) {
     width: 270px;
     margin: 28px 0 70px 0;
   }
+
 }
