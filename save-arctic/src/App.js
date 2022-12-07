@@ -34,6 +34,14 @@ function App() {
     };
   }, []);
 
+  //action & impact & quiz - index generator
+  var today = new Date();
+  var day = (today.getDate());
+  if (day == 20 || day == 30)
+    day = 10;
+  if (day > 10)
+    day = day % 10;
+  
   if (currentUser) {
     let point = 0;
     const db = getDatabase();
@@ -48,9 +56,9 @@ function App() {
         <NavBar></NavBar>
           <Routes>
             <Route path='/' element={<LandingPage isLoggedIn={true} />} /> 
-            <Route exact path='/education' element={<EducationPage />} />
+            <Route exact path='/education' element={<EducationPage index={day}/>} />
             <Route exact path='/point' element={<AccountPage point={point}/>} />
-            <Route exact path='/quiz' element={<QuizPage currentUser={currentUser}/>} />
+            <Route exact path='/quiz' element={<QuizPage currentUser={currentUser} index={day}/>} />
           </Routes>
           <Footer></Footer>
       </div>
