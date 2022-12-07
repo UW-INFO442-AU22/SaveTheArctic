@@ -42,30 +42,13 @@ const reducer = (state, action) => {
     }
     case "NEXT_QUESTION": {
       const showResults =
-        state.currentQuestionIndex === 0;
+        state.currentQuestionIndex === state.question.length - 1;
       const currentQuestionIndex = showResults
         ? state.currentQuestionIndex
         : state.currentQuestionIndex + 1;
       const answers = showResults
         ? []
-        : shuffleAnswers(state.questions[currentQuestionIndex]);
-      return {
-        ...state,
-        currentAnswer: "",
-        showResults,
-        currentQuestionIndex,
-        answers,
-      };
-    }
-    case "SEE_RESULTS": {
-      const showResults =
-        state.currentQuestionIndex === 1;
-      const currentQuestionIndex = showResults
-        ? state.currentQuestionIndex
-        : state.currentQuestionIndex + 1;
-      const answers = showResults
-        ? []
-        : shuffleAnswers(state.questions[currentQuestionIndex]);
+        : shuffleAnswers(state.question[currentQuestionIndex]);
       return {
         ...state,
         currentAnswer: "",

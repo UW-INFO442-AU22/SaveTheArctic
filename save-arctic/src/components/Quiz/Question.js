@@ -13,7 +13,7 @@ const Question = () => {
           <Answer
             answerText={answer}
             currentAnswer={quizState.currentAnswer}
-            correctAnswer={currentQuestion.correctAnswer}
+            correctAnswer={currentQuestion[0].correctAnswer}
             key={index}
             index={index}
             onSelectAnswer={(answerText) =>
