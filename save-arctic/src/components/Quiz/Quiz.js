@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "../../css/quiz.css";
 import { useContext } from "react";
 import Question from "./Question";
 import { QuizContext } from "./contexts/quiz";
@@ -23,13 +23,15 @@ function Quiz(prop) {
             </div>
             <div>You have earned {earnPoints} points towards your donation progress!</div>
           </div>
-          <div
-            onClick={() => dispatch({ type: "RESTART" })}
-            className="next-button"
-          >
-            Restart
+
+          <div className="buttons">
+            <div
+              onClick={() => dispatch({ type: "RESTART" })}
+              className="next-button"
+            >
+              Restart
+            </div>
           </div>
-          {/* <div href="#point" className="progress-button"> View Progress </div> */}
         </div>
       )}
       {!quizState.showResults && (

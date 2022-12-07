@@ -1,11 +1,10 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Kavoon&family=Oi&family=Open+Sans:wght@600&display=swap');
 
 body {
-  background-color: #e4e4e4;
-  position: relative;
-  min-height: 90%;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('../images/polar-bear2.jpeg');
+  background-size: cover;
+  min-height: 100vh;
 }
 
 div {
@@ -16,11 +15,12 @@ div {
   width: 975px;
   margin: 0 auto;
   margin-top: 5%;
-  margin-bottom: 18%;
+  margin-bottom: 25%;
 }
 
 .question {
   background-color: #ABEBFF;
+  text-shadow: 0 0 3px rgb(203, 196, 196);
   color: white;
   padding: 10px;
   min-height: 80px;
@@ -32,23 +32,28 @@ div {
 }
 
 .results {
+  margin-top: 20%;
   background-color: #fff;
   height: 300px;
   text-align: center;
+  border-radius: 20px;
 }
 
 .congratulations {
   background-color: #ABEBFF;
-  border-radius: 10px;
+  text-shadow: 0 0 3px rgb(203, 196, 196);
+  border-radius: 20px 20px 0 0;
   padding: 20px;
   font-size: 36px;
   color: #fff;
 }
 
 .results-info {
+  color: #0a9bc7;
   margin-top: 40px;
   margin-bottom: 40px;
   font-size: 18px;
+  border-radius: 20 20px;
 }
 
 .answer {
@@ -80,6 +85,7 @@ div {
 }
 
 .answer-text {
+  color: #0a9bc7;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -105,27 +111,26 @@ div {
 .next-button {
   margin: 0 auto;
   color: #fff;
-  background: #39CAF8;
+  background: #ABEBFF;
   width: 300px;
   font-size: 18px;
   font-weight: 600;
+  text-shadow: 0 0 3px rgb(203, 196, 196);
   padding: 14px 75px;
   text-transform: uppercase;
   cursor: pointer;
-  text-align: center;
 }
 
 .progress-button {
   margin: 0 auto;
   color: #fff;
-  background: #39CAF8;
+  background: #ABEBFF;
   width: 300px;
   font-size: 18px;
   font-weight: 600;
   padding: 14px 75px;
   text-transform: uppercase;
   cursor: pointer;
-  text-align: center;
 }
 
 .score {
@@ -142,12 +147,13 @@ div {
 }
 
 .quizTitle {
-    color: #000;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
+    color: white;
+    font-family: 'Kavoon', cursive;
+    font-size: 60px;
+    text-shadow: 0 0 3px rgb(166, 159, 159);
     margin: 0 auto;
-    font-weight: 1000;
-    height: 40px;
+    height: 100px;
+    margin-top: 60px;
     margin-bottom: 60px;
     display: flex;
     align-items: center;
@@ -158,7 +164,7 @@ div {
   pointer-events: none;
 }
 
-.footer p{
+.footer{
   position: fixed;
   left: 0;
   bottom: 0;
