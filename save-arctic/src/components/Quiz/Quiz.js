@@ -6,10 +6,11 @@ import { QuizContext } from "./contexts/quiz";
 import { QuizProvider } from "./contexts/quiz";
 import { getDatabase, ref , set, child, get, update, increment, onValue} from 'firebase/database';
 
-function Quiz() {
+function Quiz(prop) {
   const [quizState, dispatch] = useContext(QuizContext);
   const earnPoints = quizState.correctAnswersCount + 2;
-
+  console.log(earnPoints)
+  //updatePoints(prop.currentUser.uid, earnPoints);
   return (
     <div className="quiz">
       {quizState.showResults && (
@@ -17,8 +18,8 @@ function Quiz() {
           <div className="congratulations">Congratulations!</div>
           <div className="results-info">
             <div>
-              You've got {quizState.correctAnswersCount} of &nbsp;
-              {quizState.questions.length} right.
+              You've got {quizState.correctAnswersCount} out of&nbsp;
+              {quizState.question.length} questions right.
             </div>
             <div>You have earned {earnPoints} points towards your donation progress!</div>
           </div>
@@ -55,13 +56,13 @@ function Quiz() {
   );
 };
 
-function updatePoints(uid) {
+function updatePoints(uid, earnPoints) {
   const db = getDatabase();
   const pointsRef = ref(db, 'users/' + uid);
 
   get(child(pointsRef, 'points')).then((snapshot) => {
     if (snapshot.exists()) {
-      update(pointsRef, { points: increment(2)} );
+      update(pointsRef, { points: increment(earnPoints)} );
     }else {
       set(pointsRef, { points: 0 } );
     }
@@ -74,11 +75,11 @@ function updatePoints(uid) {
 }
 
 function QuizPage(props) {
-  updatePoints(props.currentUser.uid)
+  //updatePoints(props.currentUser.uid, earnPoints);
   return (
     <React.Fragment>
         <QuizProvider>
-        <Quiz />
+        <Quiz prop={props}/>
         </QuizProvider>
     </React.Fragment>
   );
