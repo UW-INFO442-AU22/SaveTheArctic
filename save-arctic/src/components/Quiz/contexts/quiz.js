@@ -2,11 +2,26 @@ import React, { createContext, useReducer } from "react";
 import questions from "../data";
 import { shuffleAnswers } from "../helpers";
 
+let today = new Date();
+let day = (today.getDate());
+if (day == 20 || day == 30)
+  day = 10;
+if (day > 10)
+  day = day % 10;
+
+let question = questions.filter(
+  function (obj) {
+    return obj.id == day;
+  }
+)
+// console.log(question);
+// console.log(questions)
+
 const initialState = {
-  questions,
+  question,
   currentQuestionIndex: 0,
   currentAnswer: "",
-  answers: shuffleAnswers(questions[0]),
+  answers: shuffleAnswers(question[0]),
   showResults: false,
   correctAnswersCount: 0,
 };
@@ -16,7 +31,7 @@ const reducer = (state, action) => {
     case "SELECT_ANSWER": {
       const correctAnswersCount =
         action.payload ===
-        state.questions[state.currentQuestionIndex].correctAnswer
+        state.question.correctAnswer
           ? state.correctAnswersCount + 1
           : state.correctAnswersCount;
       return {
@@ -27,13 +42,13 @@ const reducer = (state, action) => {
     }
     case "NEXT_QUESTION": {
       const showResults =
-        state.currentQuestionIndex === state.questions.length - 1;
+        state.currentQuestionIndex === state.question.length - 1;
       const currentQuestionIndex = showResults
         ? state.currentQuestionIndex
         : state.currentQuestionIndex + 1;
       const answers = showResults
         ? []
-        : shuffleAnswers(state.questions[currentQuestionIndex]);
+        : shuffleAnswers(state.question[currentQuestionIndex]);
       return {
         ...state,
         currentAnswer: "",
