@@ -16,9 +16,9 @@ function AnimalInfo() {
      <div className="content">
         <h4 className="animalHeader">{animal[random].name}</h4>
         <br></br>
-        <p><strong> Scientific Name:</strong> {animal[random].scientificName}</p>
+        <p><strong>Scientific Name:</strong> {animal[random].scientificName}</p>
         <br></br>
-        <p><strong> Population:</strong> {animal[random].population}</p>
+        <p><strong>Population:</strong> {animal[random].population}</p>
         <br></br>
         <p> {animal[random].fact}</p>
       </div>

@@ -11,8 +11,13 @@ h3 {
 
 .action {
     text-align: justify;
-    padding: 50px 50px;
+    padding: 5rem;
     background-color: white;
+}
+
+#green {
+    float: left;
+    padding: 5px;
 }
 
 .impact {
