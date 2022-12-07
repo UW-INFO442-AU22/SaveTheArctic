@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Background from "../images/arctic-fox.jpeg";
 import Graph from "../images/green.png";
 import {Link} from 'react-router-dom';
+import Footer from '../components/layout/Footer.js';
 
 
 import AnimalInfo from '../components/AnimalInfo';
@@ -63,9 +64,6 @@ function EducationPage() {
             <Link to='/quiz'>
                 <button className="quiz-button"> TAKE THE QUIZ </button>
             </Link>
-            {/* <a href='/quiz'>
-            <BootstrapButton/>
-            </a> */}
         </div>
     </div>;
 }

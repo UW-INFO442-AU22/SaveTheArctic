@@ -5,6 +5,8 @@ import {Navbar, NavItem} from 'react-bootstrap';
 
 const navbar_color = {backgroundColor: '#ABEBFF'};
 
+const tabs = {fontWeight: 'bold'};
+
 function NavBar() {
     return (
     <Navbar style={navbar_color}  variant="dark">
@@ -12,7 +14,7 @@ function NavBar() {
         <Navbar.Brand href="/" className="navbar-brand mb-1 h1 fs-4">Save The Arctic</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto" style={tabs}>
             <NavItem>
               <Link to="/education" className="nav-link">Education</Link>
             </NavItem>

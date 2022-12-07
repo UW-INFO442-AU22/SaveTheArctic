@@ -68,6 +68,8 @@
     display: flex;
     background-color: rgb(176, 226, 238);
   }
+
+
   .svg1 {
     object-fit: cover;
     width: 80%;

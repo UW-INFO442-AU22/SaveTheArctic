@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/landing_page.css";
+import Footer from '../components/layout/Footer.js';
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import { getAuth, EmailAuthProvider, GoogleAuthProvider } from "firebase/auth";
 
