@@ -18,7 +18,7 @@ function Bar() {
 
   return (
     <div>
-      <ProgressBar now={point} label={`${point}%`} />
+      <ProgressBar variant="info" now={point} label={`${point}%`} />
       <p id="pointNotification">{progress} points to your next free donation!</p>
     </div>
   );
