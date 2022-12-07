@@ -8,9 +8,7 @@ import { getDatabase, ref , set, child, get, update, increment, onValue} from 'f
 
 function Quiz(prop) {
   const [quizState, dispatch] = useContext(QuizContext);
-  const earnPoints = quizState.correctAnswersCount + 2;
-  console.log(earnPoints)
-  //updatePoints(prop.currentUser.uid, earnPoints);
+  const earnPoints = quizState.correctAnswersCount + 4;
   return (
     <div className="quiz">
       {quizState.showResults && (

@@ -1,6 +1,32 @@
 import React, { createContext, useReducer } from "react";
 import questions from "../data";
 import { shuffleAnswers } from "../helpers";
+import { getAuth } from "firebase/auth";
+import { getDatabase, ref , set, child, get, update, increment, onValue} from 'firebase/database';
+
+function updatePoints(earnPoints) {
+  const db = getDatabase();
+  let userId = getAuth().currentUser.uid;
+  const userRef = ref(db, 'users/' + userId);
+
+  const getDate = () => {
+    const date = new Date();
+    return date.toLocaleString().split(",")[0];
+  }
+
+  get(child(userRef, "lastUpdate")).then((date_snap) => { 
+      if (date_snap.val() !== getDate()) {
+        get(child(userRef, 'points')).then(() => {
+          set(userRef, {points: 0});
+          update(userRef, { lastUpdate: getDate(), points: increment(earnPoints)});
+        })
+      }
+  })
+
+  onValue(userRef, (snapshot) => {
+    console.log(snapshot.val());
+  })
+}
 
 let today = new Date();
 let day = (today.getDate());
@@ -14,8 +40,6 @@ let question = questions.filter(
     return obj.id == day;
   }
 )
-// console.log(question);
-// console.log(questions)
 
 const initialState = {
   question,
@@ -31,9 +55,10 @@ const reducer = (state, action) => {
     case "SELECT_ANSWER": {
       const correctAnswersCount =
         action.payload ===
-        state.question.correctAnswer
+        state.question[state.currentQuestionIndex].correctAnswer
           ? state.correctAnswersCount + 1
           : state.correctAnswersCount;
+        updatePoints(correctAnswersCount + 4);
       return {
         ...state,
         currentAnswer: action.payload,
