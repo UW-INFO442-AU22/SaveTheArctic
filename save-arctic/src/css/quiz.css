@@ -180,6 +180,10 @@ div {
     font-size: 20px;
     padding: 5px;
   }
+
+  .congratulations {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -195,6 +199,10 @@ div {
   .answer-letter {
     font-size: 15px;
     width: 50px;
+  }
+
+  .congratulations {
+    font-size: 30px;
   }
 }
 
@@ -214,5 +222,9 @@ div {
   .answer-letter {
     font-size: 13px;
     width: 30px;
+  }
+
+  .congratulations {
+    font-size: 30px !important;
   }
 }
