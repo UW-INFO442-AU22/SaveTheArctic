@@ -1,6 +1,7 @@
 .eduPage {
     background-color: white;
     color: #0780a5;
+    font-size: 18px;
     text-shadow: 0 0 1px rgb(209, 206, 206);
 }
 h3 {
@@ -71,6 +72,12 @@ h3 {
     margin-left: auto;
     width: 50%;
     padding-left: 10%;
+}
+
+@media (max-width: 1565px) {
+    p {
+        line-height: 2.5rem;
+    }
 }
 
 /* ----------- iPhone 12, 12 Pro ----------- */

@@ -29,7 +29,7 @@ function EducationPage(props){
                         </div>
                         <br></br>
                 <div className="dailyAction">
-                    <h4>Action of the Day</h4>
+                    <h4>Action of the Day - </h4>
                     <br></br>
                     <p><strong>{content[props.index].action}</strong></p>
                 </div>
