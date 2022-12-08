@@ -5,6 +5,7 @@
 .center {
     margin-top: 0px;
     background-color:  #F2FDFF;
+    padding-top: 50px;
 }
 
 .barContainer {
@@ -35,6 +36,15 @@
 .bear img {
     width: 300px;
     height: 300px;
+}
+
+.donationOrg img {
+    width: 500px;
+    height: 200px;
+}
+
+.card_content {
+    min-height: 280px;
 }
 
 /* for phones */
