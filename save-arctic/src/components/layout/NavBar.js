@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import {Navbar, NavItem} from 'react-bootstrap';
+import '../../css/App.css';
 
 const navbar_color = {backgroundColor: '#ABEBFF'};
 
@@ -29,7 +30,7 @@ function NavBar(prop) {
             </Nav>
           </Navbar.Collapse>
         </Nav>
-        <Nav>
+        <Nav className='userName'>
           <NavItem style={user}>{prop.userName}</NavItem>
         </Nav>
       </Container>

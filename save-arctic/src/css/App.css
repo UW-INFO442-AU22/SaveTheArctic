@@ -13,6 +13,20 @@
   }
 }
 
+@media (max-width: 450px) {
+  .navbar-brand {
+    font-size: 17px !important;
+  }
+
+  .nav-link {
+    font-size: 15px !important;
+  }
+
+  .userName {
+    display: none;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
