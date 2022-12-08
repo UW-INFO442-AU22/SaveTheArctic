@@ -13,3 +13,4 @@
 3. Bugs we had:
     * Users still can be directed to other pages even if they are not loggin in.
     * Points not displayed correctly when being redirected from landing page.
+We fixed the first bug by changing the logic of log in feature where if a user is not logged in, all the page choices will direct them to the landing page. The second bug were fixed by querying user points value before user goes to the point page so that all values needed in the point page are prerendered. 
