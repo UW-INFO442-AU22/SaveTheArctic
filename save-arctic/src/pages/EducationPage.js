@@ -9,7 +9,7 @@ function EducationPage(props){
     const content = actions
     return <div className="eduPage">
             <div className="info">
-               <h3>Meet Your Arctic Animal</h3> 
+               <h3>Meet Your Arctic Animal!</h3> 
                <br></br>
                <section>
                 <AnimalInfo /> 
@@ -36,7 +36,7 @@ function EducationPage(props){
              
             </div>
             <div className="impact">
-                <h4>Impacts of Your Action</h4>
+                <h4>Impacts of Your Action - </h4>
                 <p>{content[props.index].impact}</p>
             </div>
         <br></br>
@@ -51,7 +51,7 @@ function EducationPage(props){
                 fontWeight: 'bold'}}>Ready to save more Arctic wildlifes Forever?</h1>
             <br></br>
             <Link to='/quiz'>
-                <button className="quiz-button"> TAKE THE QUIZ </button>
+                <button className="quiz-button"> TAKE THE QUIZ! </button>
             </Link>
         </div>
     </div>;

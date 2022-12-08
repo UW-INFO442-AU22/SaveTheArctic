@@ -1,16 +1,20 @@
 .eduPage {
-    background-color: #F2FDFF;
+    background-color: white;
+    color: #0780a5;
+    text-shadow: 0 0 1px rgb(209, 206, 206);
 }
 h3 {
     text-align: center;
 }
 .info {
     text-align: justify;
+    line-height: 1.8rem;
     padding: 50px 50px;
 }
 
 .action {
     text-align: justify;
+    line-height: 1.8rem;
     padding: 5rem;
     background-color: white;
 }
@@ -22,26 +26,26 @@ h3 {
 
 .impact {
     width: 60%;
-    height: 40%;
-    border: solid 1px #555;
-    background-color: #F1D047;
-    box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
-    -moz-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
-    -webkit-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
-    -o-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+    height: 40%;	
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    background-color: rgb(176, 226, 238);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius:25px;
     text-align: justify;
     padding: 50px 35px;
     margin: auto;
+    line-height: 1.8rem;
 }
 
 .quiz-button {    
     background-color: #ABEBFF;
     color: white;
+    text-shadow: 2px 2px 3px rgb(166, 159, 159);
     font-size: 18px;
     font-weight: 600;
     padding: 10px 60px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin: 10px 0px;
     cursor: pointer;
     border: white;
@@ -51,12 +55,15 @@ h3 {
     font-size: 40px;
     font-family:'Times New Roman', Times, serif;
     padding-top: 8em;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(166, 159, 159);
 }
 
 #animal{
     display: inline-block;
     margin-right: auto;
-    width: 50%;
+    max-width: 45%;
+    height: auto;
 }
 
 .content{
