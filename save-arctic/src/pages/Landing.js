@@ -53,7 +53,7 @@ function LandingPage(props) {
         <div className="second-advise">
           <div className="top-svg">
             <img
-              className="svg1"
+              className="svg1 image1"
               src={require("../images/help-seal.jpeg")}
               alt="help the seal slogan"
             />
