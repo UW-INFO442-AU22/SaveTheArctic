@@ -76,16 +76,14 @@
   width: 600px;
   text-align: justify;
   margin: 28px 0 70px 0;
-  color: white;
+  color: #0780a5;
   font-weight: 700;
-  text-shadow: 0 0 3px rgb(166, 159, 159);
   line-height: 35px;
 }
 .lil {
   margin-left: 24px;
-  color: white;
+  color: #0780a5;
   font-weight: 800;
-  text-shadow: 0 0 3px rgb(166, 159, 159);
 }
 .top-svg {
   margin-left: 64px;

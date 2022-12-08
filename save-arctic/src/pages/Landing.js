@@ -136,12 +136,15 @@ function LandingPage(props) {
 
             <p className="texts pl">
               You can do quizes that test your understanding of the card
-              information, and earn different amount of points depending on the
+              information, more specifically, your undertanding of environmental topics and issues, 
+              and earn different number of points depending on the
               correctness. You can check how many points you have earned and the
-              total amount of money that you have donated (once you get
+              total amount of money that you have donated. Once you get
               certain points, our website will automatically donate to a chosen
               organization for you, and the total amount of how
-              much have been donated will be shown).
+              much money have been donated will be shown in the points page. Plus, a variety of environmental
+              organizations are provided in the points page for you to learn more about each and choose whichever you want
+              to make donations to.
             </p>
           </div>
         </div>
