@@ -170,3 +170,49 @@ div {
   bottom: 0;
   width: 100%;
 }
+
+@media (max-width: 1000px) {
+  .quiz {
+    width: 600px;
+  }
+
+  .question {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 650px) {
+  .quiz {
+    width: 400px;
+  }
+
+  .question {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .answer-letter {
+    font-size: 15px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .quiz {
+    width: 300px;
+  }
+
+  .question {
+    font-size: 16px;
+  }
+
+  .answers {
+    font-size: 13px;
+  }
+
+  .answer-letter {
+    font-size: 13px;
+    width: 30px;
+  }
+}
